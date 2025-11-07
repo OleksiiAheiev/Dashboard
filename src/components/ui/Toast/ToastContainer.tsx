@@ -4,7 +4,7 @@ import { CloseButtonProps, IconProps } from 'react-toastify';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 import { StyledCloseIcon, StyledIconButton } from './Toast.styles';
-import { CustomToastContainerProps, ToastType } from './Toast.types';
+import { CustomToastContainerProps, ToastType } from './types';
 
 import 'react-toastify/dist/ReactToastify.min.css';
 import { TOAST_CLASS, TOAST_CONTAINER_CLASS } from '@utils/constants/common.constants';

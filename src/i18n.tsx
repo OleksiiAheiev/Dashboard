@@ -15,9 +15,9 @@ languageDetector.detect = () => {
 i18next.use(languageDetector)
       .use(initReactI18next)
       .use(Backend).init({
-          supportedLngs: ['en',],
+          supportedLngs: ['en', 'uk'],
           returnObjects: true,
           load: 'languageOnly',
-          fallbackLng: "en",
+          fallbackLng: 'en',
           debug: true,
 });
