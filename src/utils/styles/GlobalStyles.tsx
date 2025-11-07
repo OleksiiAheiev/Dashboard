@@ -26,27 +26,6 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 500;
         src: url("/fonts/DMSans/DMSans-Medium.ttf");
     }
-    
-    @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 300;
-        src: url("/fonts/Roboto/Roboto-Light.ttf");
-    }
-    
-    @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        src: url("/fonts/Roboto/Roboto-Regular.ttf");
-    }
-
-    @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 500;
-        src: url("/fonts/Roboto/Roboto-Medium.ttf");
-    }
 
     * {
         box-sizing: border-box;
