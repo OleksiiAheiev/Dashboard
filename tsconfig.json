@@ -4,11 +4,6 @@
     "downlevelIteration": true,
     "useDefineForClassFields": true,
     "lib": [
-      "es5",
-      "es6",
-      "dom",
-      "dom.iterable",
-      "esnext",
       "DOM",
       "DOM.Iterable",
       "ESNext"
@@ -21,13 +16,23 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "src",
-    "types": ["vite/client"]
+    "baseUrl": ".",
+    "types": ["vite/client", "node"],
+    "paths": {
+      "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"],
+      "@i18n": ["./src/i18n.ts"],
+      "@pages/*": ["./src/pages/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/App/components/*"],
+      "@svgs/*": ["./src/assets/icons/svgs/*"],
+      "@layout/*": ["./src/layout/*"]
+    }
   },
   "include": ["src", "vite.config.ts"]
 }

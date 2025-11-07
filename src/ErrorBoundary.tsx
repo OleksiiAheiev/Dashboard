@@ -1,5 +1,6 @@
-import AppError from "AppError";
+
 import React, { Component, ReactNode } from "react";
+import AppError from "./AppError";
 
 interface ErrorBoundaryProps {
   children?: ReactNode;
