@@ -17,8 +17,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorBoundary />,
     children: [
       { index: true, element: <InitialRoute /> },
-      MainRoutes,
-      LoginRoutes,
+      MainRoutes, LoginRoutes,
       { path: "*", element: <Navigate to={PAGE_PATH.main} replace /> }
     ]
   }

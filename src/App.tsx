@@ -20,7 +20,7 @@ export default function App() {
         <AppRouter />
       </ThemeProvider>
       <ReactQueryDevtools />
-  </QueryClientProvider>
+    </QueryClientProvider>
 
   )
 }
