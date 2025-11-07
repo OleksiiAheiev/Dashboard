@@ -19,5 +19,5 @@ i18next.use(languageDetector)
           returnObjects: true,
           load: 'languageOnly',
           fallbackLng: 'en',
-          debug: true,
+          debug: false,
 });
