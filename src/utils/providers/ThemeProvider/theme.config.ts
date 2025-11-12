@@ -5,96 +5,95 @@ import { ThemeMode } from "@utils/providers/ThemeProvider";
 export const LIGHT_SHADOW = "0px 1px 14px 0px rgba(0, 0, 0, 0.12)";
 export const DARK_SHADOW = "0px 1px 14px 0px rgba(0, 0, 0, 0.3)";
 
-const LIGHT_PALETTE: ThemeOptions["palette"] = {
+const LIGHT_PALETTE: ThemeOptions['palette'] = {
   mode: ThemeMode.LIGHT,
   background: {
-    default: "#FFFBED",
-    paper: "#FFFBED"
+    default: '#fafafa',
+    paper: '#ffffff'
   },
   text: {
-    primary: "#282828",
-    secondary: hexToRgba("#282828", 0.5),
-    disabled: hexToRgba("#282828", 0.3)
+    primary: '#262626',
+    secondary: hexToRgba('#262626', 0.5),
+    disabled: hexToRgba('#262626', 0.3)
   },
   primary: {
-    main: "#076678",
-    light: "#458588",
-    contrastText: "#ffffff"
+    main: '#1890FF',
+    light: '#69C0FF',
+    contrastText: '#ffffff'
   },
   secondary: {
-    main: "#8F3F71",
-    light: "#FB9678",
-    contrastText: "#D65D0E"
+    main: '#8c8c8c',
+    light: '#bfbfbf',
+    contrastText: '#262626'
   },
   success: {
-    main: "#689D6A",
-    light: "#427B58",
-    contrastText: "#8EC07C"
+    main: '#52C41A',
+    light: '#95DE64',
+    contrastText: '#ffffff'
   },
   warning: {
-    main: "#FEC90F4D",
-    light: "#FABD2F",
-    contrastText: "#FFB200"
+    main: '#FAAD14',
+    light: '#FFD666',
+    contrastText: '#000000'
   },
   error: {
-    main: "#9D0006",
-    light: "#CC241D"
+    main: '#F5222D',
+    light: '#FF7875'
   },
   info: {
-    main: "#076678",
-    light: "#1A9BFC4D"
+    main: '#1890FF',
+    light: '#91D5FF'
   },
-  divider: hexToRgba("#282828", 0.3),
+  divider: hexToRgba('#8c8c8c', 0.3),
   action: {
-    hover: "#83A598"
+    hover: '#f0f0f0'
   }
-};
+}
 
-const DARK_PALETTE: ThemeOptions["palette"] = {
+const DARK_PALETTE: ThemeOptions['palette'] = {
   mode: ThemeMode.DARK,
   background: {
-    default: "#191919",
-    paper: "#202020"
+    default: '#141414',
+    paper: '#1f1f1f'
   },
   text: {
-    primary: "#EBDBB2",
-    secondary: hexToRgba("#EBDBB2", 0.5),
-    disabled: "#7A7A7A"
+    primary: '#f5f5f5',
+    secondary: hexToRgba('#f5f5f5', 0.5),
+    disabled: '#8c8c8c'
   },
   primary: {
-    main: "#076678",
-    light: "#458588",
-    contrastText: "#FBF1C7"
+    main: '#177DDC',
+    light: '#3C9AE8',
+    contrastText: '#ffffff'
   },
   secondary: {
-    main: "#8F3F71",
-    light: "#FB9678",
-    contrastText: "#D65D0E"
+    main: '#8c8c8c',
+    light: '#bfbfbf',
+    contrastText: '#262626'
   },
   success: {
-    main: "#689D6A",
-    light: "#39CB7F4D",
-    contrastText: "#8EC07C"
+    main: '#49AA19',
+    light: '#73D13D',
+    contrastText: '#ffffff'
   },
   warning: {
-    main: "#FFA726",
-    light: "#FABD2F",
-    contrastText: "#D32F2F"
+    main: '#FAAD14',
+    light: '#FFD666',
+    contrastText: '#000000'
   },
   error: {
-    main: "#CC241D",
-    light: "#CC241D"
+    main: '#F5222D',
+    light: '#FF7875'
   },
   info: {
-    main: "#458588",
-    light: "#1A9BFC4D"
+    main: '#177DDC',
+    light: '#69C0FF'
   },
-  divider: "#333333",
+  divider: '#434343',
   action: {
-    hover: "#83A598"
+    hover: '#262626'
   }
-};
-
+}
 const LIGHT_COMPONENTS: ThemeOptions["components"] = {
 
 };
