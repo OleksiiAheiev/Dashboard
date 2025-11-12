@@ -1,13 +1,24 @@
-import React, { FC, memo } from "react";
-import { AuthWrapperProps } from "./AuthWrapper.types";
 import { AuthCard } from "../AuthCard";
+import { AuthWrapperProps } from "./AuthWrapper.types";
+import { ContentContainer, Wrapper } from "./AuthWrapper.styles";
 
-const AuthWrapper: FC<AuthWrapperProps> = ({ children, }) => {
+const AuthWrapper = ({ children }: AuthWrapperProps) => {
   return (
-    <AuthCard>
-      {children}
-    </AuthCard>
-  );
-};
+    <Wrapper>
+      {/* <AuthBackground />
+      <LogoContainer>
+        <Logo />
+      </LogoContainer> */}
 
-export default memo(AuthWrapper);
+      <ContentContainer>
+        <AuthCard>{children}</AuthCard>
+      </ContentContainer>
+
+      {/* <FooterContainer>
+        <AuthFooter />
+      </FooterContainer> */}
+    </Wrapper>
+  )
+}
+
+export default AuthWrapper;

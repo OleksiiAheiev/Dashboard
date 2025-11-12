@@ -1,9 +1,10 @@
 import { PublicLayout } from "@layout/PublicLayout";
 import { PAGE_PATH } from "./paths";
 import { AuthLayout } from "@layout/AuthLayout";
-import { Login } from "@pages/auth/Login";
-import { Register } from "@pages/auth/Register";
+import { lazy } from "react";
 
+const Login = lazy(() => import('@pages/auth/Login'))
+const Register = lazy(() => import('@pages/auth/Register'))
 
 const LoginRoutes = {
   element: <PublicLayout />,

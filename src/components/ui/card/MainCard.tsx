@@ -2,14 +2,14 @@ import React, { forwardRef } from 'react'
 import { MainCardProps } from './types'
 import { StyledMainCard } from './MainCard.styles'
 
-export const MainCard = forwardRef<HTMLDivElement, MainCardProps>(
+const MainCard = forwardRef<HTMLDivElement, MainCardProps>(
   ({ children, sx = {}, elevation = 0, border = true, ...props }, ref) => {
     return (
       <StyledMainCard
         ref={ref}
         elevation={elevation}
         sx={sx}
-        border={border}
+        $border={border}
         {...props}
       >
         {children}
@@ -17,3 +17,5 @@ export const MainCard = forwardRef<HTMLDivElement, MainCardProps>(
     )
   }
 )
+
+export default MainCard;

@@ -1,1 +1,1 @@
-export { MainCard } from "./MainCard";
+export { default as MainCard } from "./MainCard";

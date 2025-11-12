@@ -1,4 +1,4 @@
-import AuthWrapper from "@pages/auth/components/auth-wrapper/AuthWrapper";
+import { AuthWrapper } from "@pages/auth/components/auth-wrapper";
 import React, { memo } from "react";
 import { Outlet } from "react-router-dom";
 
