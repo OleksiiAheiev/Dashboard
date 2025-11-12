@@ -1,14 +1,12 @@
-
 import React, { FC, memo } from "react";
-import { Container, Header, Wrapper } from "./AuthWrapper.styles";
 import { AuthWrapperProps } from "./AuthWrapper.types";
+import { AuthCard } from "../AuthCard";
 
-const AuthWrapper: FC<AuthWrapperProps> = ({ children, ...other }) => {
+const AuthWrapper: FC<AuthWrapperProps> = ({ children, }) => {
   return (
-    <Container {...other}>
-      <Header />
-      <Wrapper>{children}</Wrapper>
-    </Container>
+    <AuthCard>
+      {children}
+    </AuthCard>
   );
 };
 
