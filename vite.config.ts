@@ -25,10 +25,14 @@ export default defineConfig({
       "@pages": path.resolve(__dirname, "./src/pages"),
       "@utils": path.resolve(__dirname, "./src/utils"),
       "@assets": path.resolve(__dirname, "./src/assets"),
-      "@components": path.resolve(__dirname, "./src/App/components"),
+      "@components": path.resolve(__dirname, "./src/components"),
       "@svgs": path.resolve(__dirname, "./src/assets/icons/svgs"),
       '@layout': path.resolve(__dirname, "./src/layout")
     }
+  },
+  server: {
+    open: true,
+    port: 3000
   },
   preview: {
 		port: 3000,
