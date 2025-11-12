@@ -1,4 +1,5 @@
-import PrivateLayout from '@layout/PrivateLayout';
+
+import { PrivateLayout } from '@layout/PrivateLayout';
 import { PAGE_PATH } from './paths';
 import { Suspense } from 'react';
 

@@ -5,7 +5,7 @@ import { ThemeMode } from "@utils/providers/ThemeProvider";
 export const LIGHT_SHADOW = "0px 1px 14px 0px rgba(0, 0, 0, 0.12)";
 export const DARK_SHADOW = "0px 1px 14px 0px rgba(0, 0, 0, 0.3)";
 
-export const LIGHT_PALETTE: ThemeOptions["palette"] = {
+const LIGHT_PALETTE: ThemeOptions["palette"] = {
   mode: ThemeMode.LIGHT,
   background: {
     default: "#FFFBED",
@@ -50,7 +50,7 @@ export const LIGHT_PALETTE: ThemeOptions["palette"] = {
   }
 };
 
-export const DARK_PALETTE: ThemeOptions["palette"] = {
+const DARK_PALETTE: ThemeOptions["palette"] = {
   mode: ThemeMode.DARK,
   background: {
     default: "#191919",

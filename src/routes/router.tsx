@@ -3,7 +3,8 @@ import { PAGE_PATH } from './paths';
 import { ErrorBoundary } from '../ErrorBoundary';
 import LoginRoutes from './LoginRoutes';
 import MainRoutes from './MainRoutes';
-import AppLayout from '@layout/AppLayout';
+import { AppLayout } from '@layout/AppLayout';
+
 
 const InitialRoute = () => {
   const isAuthenticated = false;

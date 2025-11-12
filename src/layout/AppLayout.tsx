@@ -13,7 +13,7 @@ const Container = styled.section`
   overflow: hidden;
 `;
 
-const AppLayout = () => {
+export const AppLayout = () => {
   const { mode } = useThemeContext();
 
   return (
@@ -23,5 +23,3 @@ const AppLayout = () => {
     </Container>
   );
 };
-
-export default AppLayout;

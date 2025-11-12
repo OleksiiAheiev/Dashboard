@@ -1,8 +1,8 @@
-import PublicLayout from "@layout/PublicLayout";
+import { PublicLayout } from "@layout/PublicLayout";
 import { PAGE_PATH } from "./paths";
-import AuthLayout from "@layout/AuthLayout";
-import Login from "@pages/auth/Login";
-import Register from "@pages/auth/Register";
+import { AuthLayout } from "@layout/AuthLayout";
+import { Login } from "@pages/auth/Login";
+import { Register } from "@pages/auth/Register";
 
 
 const LoginRoutes = {

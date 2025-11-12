@@ -1,10 +1,8 @@
 import React from "react";
 
-const PrivateLayout = () => {
+export const PrivateLayout = () => {
   return (
     <>
     </>
   );
 };
-
-export default PrivateLayout;
